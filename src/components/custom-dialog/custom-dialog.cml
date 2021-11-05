@@ -2,7 +2,7 @@
   <view class="dialog-wrap" id="dialogWrap" c-if="{{dialogData.isShowModel}}" c-bind:tap="handleCloseDialogInfors">
     <view class="dialog-content">
       <c-radio-group class="radio-button" option="{{ radioGroupOption }}" c-bind:groupchange="handleChangeRadioInfors"></c-radio-group>
-      <button class="button-sure" text="保存设置" c-bind:onclick="handleEditInfors"></button>
+      <button class="button-sure" text="保存设置" c-bind:onclick="handleEditSaveInfors"></button>
     </view> 
   </view>
 </template>
@@ -40,7 +40,9 @@ class CustomDialog {
     handleChangeRadioInfors(e) {
       this.radioSelectLabel = this.radioGroupOption[e.detail.index].label;
     },
-    handleEditInfors() {},
+    handleEditSaveInfors() {
+      this.$cmlEmit("handleCloseParentDialogInfors")
+    },
     handleCloseDialogInfors(e) {
       let domId = e.target.id;
       if(domId == "dialogWrap"){

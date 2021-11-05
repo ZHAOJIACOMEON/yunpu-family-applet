@@ -46,7 +46,9 @@ var CustomDialog = function () {
       handleChangeRadioInfors: function handleChangeRadioInfors(e) {
         this.radioSelectLabel = this.radioGroupOption[e.detail.index].label;
       },
-      handleEditInfors: function handleEditInfors() {},
+      handleEditSaveInfors: function handleEditSaveInfors() {
+        this.$cmlEmit("handleCloseParentDialogInfors");
+      },
       handleCloseDialogInfors: function handleCloseDialogInfors(e) {
         var domId = e.target.id;
         if (domId == "dialogWrap") {
