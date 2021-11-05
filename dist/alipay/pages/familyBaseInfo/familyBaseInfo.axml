@@ -1,0 +1,46 @@
+<view class="wrap  cml-base cml-view cml-4d54ef25">
+  <view class="card  cml-base cml-view cml-4d54ef25">
+    <view class="detail-content  cml-base cml-view cml-4d54ef25">
+      <text class="title  cml-base cml-text cml-4d54ef25">家族ID</text>
+      <text class="desc  cml-base cml-text cml-4d54ef25">17977008</text>
+    </view>
+    <view class="detail-content  cml-base cml-view cml-4d54ef25">
+      <text class="title  cml-base cml-text cml-4d54ef25">家族名称</text>
+      <text class="desc  cml-base cml-text cml-4d54ef25">汶上刘氏</text>
+    </view>
+    <view class="detail-content  cml-base cml-view cml-4d54ef25">
+      <text class="title  cml-base cml-text cml-4d54ef25">堂号</text>
+      <text class="desc  cml-base cml-text cml-4d54ef25">敦睦堂</text>
+    </view>
+    <view class="detail-content  cml-base cml-view cml-4d54ef25">
+      <text class="title  cml-base cml-text cml-4d54ef25">姓氏</text>
+      <text class="desc  cml-base cml-text cml-4d54ef25">刘</text>
+    </view>
+    <view class="detail-content  cml-base cml-view cml-4d54ef25">
+      <text class="title  cml-base cml-text cml-4d54ef25">始祖</text>
+      <text class="desc  cml-base cml-text cml-4d54ef25">刘</text>
+    </view>
+    <view class="detail-content  cml-base cml-view cml-4d54ef25">
+      <text class="title  cml-base cml-text cml-4d54ef25">地址</text>
+      <text class="desc  cml-base cml-text cml-4d54ef25">北京市海淀区</text>
+    </view>
+    <view class="detail-content  cml-base cml-view cml-4d54ef25">
+      <text class="title  cml-base cml-text cml-4d54ef25">简介</text>
+      <text class="desc  cml-base cml-text cml-4d54ef25">温馨的气氛和欢快的节奏</text>
+    </view>
+  </view>
+  <view class="card  cml-base cml-view cml-4d54ef25">
+    <view class="detail-content  cml-base cml-view cml-4d54ef25">
+      <text class="title  cml-base cml-text cml-4d54ef25">介绍人</text>
+      <text class="desc  cml-base cml-text cml-4d54ef25">于强</text>
+    </view>
+    <view class="detail-content  cml-base cml-view cml-4d54ef25">
+      <text class="title  cml-base cml-text cml-4d54ef25">资助人</text>
+      <text class="desc  cml-base cml-text cml-4d54ef25">刘氏</text>
+    </view>
+    <view class="detail-content  cml-base cml-view cml-4d54ef25">
+      <text class="title  cml-base cml-text cml-4d54ef25">状态</text>
+      <text class="desc  cml-base cml-text cml-4d54ef25">待激活</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "c-radio-group": "./../../npm/cml-ui/components/c-radio-group/c-radio-group",
+        "cml-buildin-button": "./../../npm/chameleon-ui-builtin/components/button/button"
+    },
+    "component": true
+}

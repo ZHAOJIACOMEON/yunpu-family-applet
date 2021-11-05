@@ -1,0 +1,62 @@
+@import '/static/css/page.css'; 
+ .wrap {
+  padding: 0.5rem 0.8rem 0 0.8rem;
+  background-image: url(http://10.4.95.161:8000/baidu/static/img/bj_bb086c5.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.search-input {
+  height: 1.12rem !important;
+  line-height: 1.12rem !important;
+  border-color: rgba(153, 153, 153, 0) !important;
+}
+.card {
+  background-color: #fff;
+  border-radius: 0.24rem;
+  padding: 0.2rem 0.6rem 0.2rem 0.6rem;
+  margin: 0.2rem 0 0.4rem 0;
+  box-shadow: 0 0.08rem 0.24rem 0 rgba(0, 0, 0, 0.1);
+}
+.item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  border-bottom: 0.01rem solid #e2e2e2;
+}
+.item:last-child {
+  border-bottom: 0;
+}
+.item-left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+}
+.manager-name {
+  width: 1.4rem;
+  font-size: 0.32rem;
+  margin: 0 0.1rem 0 0;
+  color: #000;
+  font-weight: bold;
+}
+.manager-role {
+  font-size: 0.2rem;
+  color: #999;
+}
+.item-right {
+  font-size: 0.32rem;
+  color: #2C3F9E;
+  background-color: #fff;
+}

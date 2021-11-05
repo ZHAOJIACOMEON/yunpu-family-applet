@@ -1,0 +1,95 @@
+<template>
+  <view>
+    <view style="height:{{viewPortHeight}}cpx;">
+      <component is="{{currentComp}}"></component>
+    </view>
+    <c-tabbar
+      c-bind:onclick="handleTabbarClick"
+      c-model="{{currentComp}}"
+      tabbar="{{tabbar}}"
+      class="tab-wrap"
+    ></c-tabbar>
+  </view>
+</template>
+
+<script>
+import cml from 'chameleon-api';
+class Index {
+  data = {
+    viewPortHeight: 0,
+    currentComp: 'familyHome',
+    tabbar: {
+      tabbarStyle: 'height:100cpx;background-color:#fff', //tabbar最外层的样式支持自定义
+      tabLineStyle: 'background-color:#fff;height:2cpx;', //自定义tabline的高度和背景色
+      textStyle: 'fontSize:8cpx;color:#999', //文案默认style ,可以这里控制文案的大小，样式等
+      selectedTextStyle: 'fontSize:8cpx;color:#586ED0', //文案被选择style
+      // "position":"top", //tabbar的位置 top/bottom
+      useFixedLayout: true, //是否通过fixed布局进行tabbar的布局
+      list: [
+        {
+          compName: 'messageHome',
+          text: '消息',
+          icon: require('../assets/images/messageHomeDefault@2x.png'),
+          selectedIcon: require('../assets/images/messageHomeActive@2x.png')
+        },
+        {
+          compName: 'familyHome',
+          text: '家族',
+          icon: require('../assets/images/familyHomeDefault@2x.png'),
+          selectedIcon: require('../assets/images/familyHomeActive@2x.png')
+        },
+        {
+          compName: 'findHome',
+          text: '发现',
+          icon: require('../assets/images/findHomeDefault@2x.png'),
+          selectedIcon: require('../assets/images/findHomeActive@2x.png')
+        },
+        {
+          compName: 'userHome',
+          text: '我的',
+          icon: require('../assets/images/userHomeDefault@2x.png'),
+          selectedIcon: require('../assets/images/userHomeActive@2x.png')
+        },
+      ],
+    },
+  };
+  methods = {
+    handleTabbarClick(args) {
+      console.log('tabbar-info', args);
+    },
+  };
+  created(res) {
+    cml.getSystemInfo().then((info) => {
+      //这里要减去tabbar的高度，默认是120cpx,如果tabbarStyle中设置了其他高度，则要减去对应的值；
+      this.viewPortHeight = Number(info.viewportHeight) - 100;
+    });
+    if (res.comp) {
+      //这里可以在传递的query中获取到想要激活的组件,具体使用方式参见文末的demo链接
+      this.currentComp = res.comp;
+    }
+  }
+}
+
+export default new Index();
+</script>
+
+<style scoped>
+.tab-wrap {
+  background-color: #fff;
+  border-top: 0.01rem solid #eee;
+}
+</style>
+
+<script cml-type="json">
+{
+  "base": {
+    "usingComponents": {
+      "c-tabbar":"cml-ui/components/c-tabbar/c-tabbar",
+      "messageHome":"./messageHome/index",
+      "familyHome":"./familyHome/index",
+      "findHome":"./findHome/index",
+      "userHome":"./userHome/index"
+    }
+  }
+}
+</script>

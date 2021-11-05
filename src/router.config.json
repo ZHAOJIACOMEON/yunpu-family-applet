@@ -1,0 +1,47 @@
+{
+  "mode": "history",
+  "domain": "https://www.chameleon.com",
+  "routes":[
+    {
+      "url": "/index",
+      "path": "/pages/index",
+      "name": "首页",
+      "mock": "index.php"
+    },{
+      "url": "/shareList",
+      "path": "/pages/share/shareList",
+      "name": "家族分享",
+      "mock": "index.php"
+    },{
+      "url": "/activeList",
+      "path": "/pages/active/activeList",
+      "name": "家族活动",
+      "mock": "index.php"
+    },{
+      "url": "/activeDetail",
+      "path": "/pages/active/activeDetail",
+      "name": "家族活动详情",
+      "mock": "index.php"
+    },{
+      "url": "/familyBaseInfo",
+      "path": "/pages/familyBaseInfo/familyBaseInfo",
+      "name": "家族基本信息",
+      "mock": "index.php"
+    },{
+      "url": "/familyTree",
+      "path": "/pages/familyTree/familyTree",
+      "name": "家族树",
+      "mock": "index.php"
+    },{
+      "url": "/manageFamilyList",
+      "path": "/pages/manageFamily/manageFamilyList",
+      "name": "家族管理",
+      "mock": "index.php"
+    },{
+      "url": "/managerList",
+      "path": "/pages/addManager/managerList",
+      "name": "管理员列表",
+      "mock": "index.php"
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+<template>
+  <view class="wrap">
+    <view class="card">
+      <view class="message-base" c-bind:tap="handleToFamilyShareListInfors">
+        <view class="left-content">
+          <view class="icon"><image src="{{imageSrc}}" class="icon-image"></image></view>
+          <text class="title">家族分享</text>
+        </view>
+        <view class="right-content">
+          <text class="desc">有新的分享</text>
+          <view class="arrow"></view>
+        </view>
+      </view>
+      <view class="message-base" c-bind:tap="handleToFamilyActiveListInfors">
+        <view class="left-content">
+          <view class="icon"><image src="{{imageSrc}}" class="icon-image"></image></view>
+          <text class="title">家族活动</text>
+        </view>
+        <view class="right-content">
+          <text class="desc">有新的活动</text>
+          <view class="arrow"></view>
+        </view>
+      </view>
+    </view>
+    <view class="card">
+      <view class="message-base" c-bind:tap="handleToFamilyBaseInfoInfors">
+        <view class="left-content">
+          <view class="icon"><image src="{{imageSrc}}" class="icon-image"></image></view>
+          <text class="title">家族基本信息</text>
+        </view>
+        <view class="right-content">
+          <text class="desc"></text>
+          <view class="arrow"></view>
+        </view>
+      </view>
+      <view class="message-base" c-bind:tap="handleToFamilyTreeInfoInfors">
+        <view class="left-content">
+          <view class="icon"><image src="{{imageSrc}}" class="icon-image"></image></view>
+          <text class="title">家族树</text>
+        </view>
+        <view class="right-content">
+          <text class="desc"></text>
+          <view class="arrow"></view>
+        </view>
+      </view>
+      <view class="message-base" c-bind:tap="handleToManageFamilyListInfors">
+        <view class="left-content">
+          <view class="icon"><image src="{{imageSrc}}" class="icon-image"></image></view>
+          <text class="title">管理家族</text>
+        </view>
+        <view class="right-content">
+          <text class="desc"></text>
+          <view class="arrow"></view>
+        </view>
+      </view>
+      <view class="message-base">
+        <view class="left-content">
+          <view class="icon"><image src="{{imageSrc}}" class="icon-image"></image></view>
+          <text class="title">家族资料</text>
+        </view>
+        <view class="right-content">
+          <text class="desc"></text>
+          <view class="arrow"></view>
+        </view>
+      </view>
+      <view class="message-base">
+        <view class="left-content">
+          <view class="icon"><image src="{{imageSrc}}" class="icon-image"></image></view>
+          <text class="title">电子家谱</text>
+        </view>
+        <view class="right-content">
+          <text class="desc"></text>
+          <view class="arrow"></view>
+        </view>
+      </view>
+      <view class="message-base">
+        <view class="left-content">
+          <view class="icon"><image src="{{imageSrc}}" class="icon-image"></image></view>
+          <text class="title">家族数据</text>
+        </view>
+        <view class="right-content">
+          <text class="desc"></text>
+          <view class="arrow"></view>
+        </view>
+      </view>
+      <view class="message-base">
+        <view class="left-content">
+          <view class="icon"><image src="{{imageSrc}}" class="icon-image"></image></view>
+          <text class="title">云谱贡献榜</text>
+        </view>
+        <view class="right-content">
+          <text class="desc"></text>
+          <view class="arrow"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
+
+<script>
+import cml from 'chameleon-api';
+
+  class Index  {
+    data = {
+      imageSrc: require("../../assets/images/share@2x.png")
+    };
+    methods = {
+      handleToFamilyShareListInfors() {
+        cml.redirectTo({
+          "path": "/pages/share/shareList"
+        });
+      },
+      handleToFamilyActiveListInfors() {
+        cml.redirectTo({
+          "path": "/pages/active/activeList"
+        });
+      },
+      handleToFamilyBaseInfoInfors() {
+        cml.redirectTo({
+          "path": "/pages/familyBaseInfo/familyBaseInfo"
+        });
+      },
+      handleToFamilyTreeInfoInfors() {
+        cml.redirectTo({
+          "path": "/pages/familyTree/familyTree"
+        });
+      },
+      handleToManageFamilyListInfors() {
+        cml.redirectTo({
+          "path": "/pages/manageFamily/manageFamilyList"
+        });
+      }
+    };
+  }
+  export default new Index();
+</script>
+<style scoped>
+.wrap {
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  background-image: url("../../assets/images/bj.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.card {
+  background-color: #fff;
+  border-radius: 0.24rem;
+  padding: 0.2rem 0.6rem 0.2rem 0.6rem;
+  margin: 0 0 0.4rem 0;
+  box-shadow: 0 0.08rem 0.24rem 0 rgba(0,0,0,0.1);
+}
+.message-base {
+  flex-direction: row;
+  align-items: center;
+  margin: 0.4rem 0;
+}
+.left-content {
+  width: 3.9rem;
+  flex-direction: row;
+  align-items: center;
+}
+.right-content {
+  width: 3.9rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.icon {
+  width: 0.32rem;
+  height: 0.32rem;
+}
+img.icon-image {
+  display: block;
+  width: 0.32rem;
+  height: 0.32rem;
+}
+.title {
+  font-size: 0.38rem;
+  color: #000;
+  margin-left: 0.2rem;
+  display: flex;
+}
+.desc {
+  font-size: 0.24rem;
+  color: #586ED0;
+}
+.arrow {
+  width: 0.32rem;
+  height: 0.5rem;
+  background-image: url("../../assets/images/arrow-right.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 0.1rem;
+}
+</style>
+<script cml-type="json">
+{
+  "base": {}
+}
+</script>

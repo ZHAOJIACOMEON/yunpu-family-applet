@@ -1,0 +1,5 @@
+@import '/static/css/page.qss'; 
+ .tab-wrap {
+  background-color: #fff;
+  border-top: 0.01rem solid #eee;
+}

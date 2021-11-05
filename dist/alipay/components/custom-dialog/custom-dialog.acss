@@ -1,0 +1,30 @@
+@import '/static/css/index.acss'; 
+ .cml-26e24a32.dialog-wrap {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.cml-26e24a32.dialog-content {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #fff;
+  border-top-left-radius: 0.64rem;
+  border-top-right-radius: 0.64rem;
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
+}
+.cml-26e24a32.button-sure {
+  height: 1.12rem;
+  line-height: 1.12rem;
+  background-color: #586ED0;
+  font-size: 0.36rem;
+  color: #fff;
+  border-radius: 0.16rem;
+  margin: 0.2rem 0 0 0;
+}
+/deep/ .cml-radio-wrap {
+  width: 100%;
+}

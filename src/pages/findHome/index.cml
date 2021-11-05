@@ -1,0 +1,176 @@
+<template>
+  <view class="wrap">
+    <view class="card focus-content">
+      <view class="focus-item">
+        <text class="focus-total">7697</text>
+        <text class="focus-title">入驻家族</text>
+      </view>
+      <view class="focus-item">
+        <text class="focus-total">12456</text>
+        <text class="focus-title">家族人数</text>
+      </view>
+      <view class="focus-item">
+        <text class="focus-total">254</text>
+        <text class="focus-title">昨日新增</text>
+      </view>
+    </view>
+    <view class="message-base space-between">
+      <view class="left-content">云谱头条</view>
+      <view class="right-content">
+        <text class="desc desc-color-default">更多</text>
+        <view class="arrow"></view>
+      </view>
+    </view>
+    <carousel class="carousel" indicator-dots="{{true}}"  current="{{1}}" circular="{{true}}">
+      <carousel-item>
+        <view class="carousel-item"><image src="{{carouselImage}}" class="carousel-image"></image></view>
+      </carousel-item>
+      <carousel-item>
+        <view class="carousel-item"><image src="{{carouselImage}}" class="carousel-image"></image></view>
+      </carousel-item>
+      <carousel-item>
+        <view class="carousel-item"><image src="{{carouselImage}}" class="carousel-image"></image></view>
+      </carousel-item>
+    </carousel>
+    <view class="card">
+      <view class="message-base">
+        <view class="left-content">
+          <view class="icon"><image src="{{imageSrc}}" class="icon-image"></image></view>
+          <text class="title">家族列表</text>
+        </view>
+        <view class="right-content">
+          <text class="desc desc-color-default">查看加入家族</text>
+          <view class="arrow"></view>
+        </view>
+      </view>
+      <view class="message-base">
+        <view class="left-content">
+          <view class="icon"><image src="{{imageSrc}}" class="icon-image"></image></view>
+          <text class="title">皇家世系</text>
+        </view>
+        <view class="right-content">
+          <text class="desc"></text>
+          <view class="arrow"></view>
+        </view>
+      </view>
+      <view class="message-base">
+        <view class="left-content">
+          <view class="icon"><image src="{{imageSrc}}" class="icon-image"></image></view>
+          <text class="title">寻根问祖</text>
+        </view>
+        <view class="right-content">
+          <text class="desc"></text>
+          <view class="arrow"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
+
+<script>
+class Index  {
+  data = {
+    imageSrc: require("../../assets/images/share@2x.png"),
+    carouselImage: require("../../assets/images/carousel.png"),
+  };
+  methods = {};
+}
+export default new Index();
+</script>
+<script cml-type="json">
+</script>
+<style scoped>
+.wrap {
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  background-image: url("../../assets/images/bj.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.card {
+  background-color: #fff;
+  border-radius: 0.24rem;
+  padding: 0.2rem 0.6rem 0.2rem 0.6rem;
+  margin: 0 0 0.4rem 0;
+  box-shadow: 0 0.08rem 0.24rem 0 rgba(0,0,0,0.1);
+}
+.focus-content {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.focus-item {
+  align-items: center;
+}
+.focus-total {
+  font-weight: bold;
+  font-size: 0.48rem;
+  color: #2C3F9E;
+  padding: 0.2rem 0 0 0;
+}
+.focus-title {
+  font-size: 0.32rem;
+  color: #333;
+  margin: 0.2rem auto auto auto;
+  padding: 0 0 0.3rem 0;
+}
+.message-base {
+  flex-direction: row;
+  align-items: center;
+  margin: 0.4rem 0;
+}
+.space-between {
+  justify-content: space-between;
+}
+.left-content {
+  width: 3.9rem;
+  flex-direction: row;
+  align-items: center;
+}
+.right-content {
+  width: 3.9rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.icon {
+  width: 0.32rem;
+  height: 0.32rem;
+}
+img.icon-image {
+  display: block;
+  width: 0.32rem;
+  height: 0.32rem;
+}
+.title {
+  font-size: 0.38rem;
+  color: #000;
+  margin-left: 0.2rem;
+  display: flex;
+}
+.desc {
+  font-size: 0.24rem;
+  color: #586ED0;
+}
+.desc-color-default {
+  color: #999;
+}
+.arrow {
+  width: 0.32rem;
+  height: 0.5rem;
+  background-image: url("../../assets/images/arrow-right.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 0.1rem;
+}
+.carousel {
+  overflow: hidden;
+  margin: auto auto 0.4rem auto;
+}
+.carousel-item {
+  height: 4.8rem;
+  width: 100%;
+}
+</style>
+<script cml-type="json">
+{
+}
+</script>

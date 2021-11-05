@@ -1,0 +1,122 @@
+<template>
+  <view class="wrap">
+    <view class="card">
+      <view class="message-base">
+        <view class="icon">
+          <view><image src="{{imageSrc}}" class="icon-image"></image></view>
+        </view>
+        <text class="title">大事记</text>
+        <view class="time">2019-01-03 19:31</view>
+      </view>
+      <view class="describe">2019年3月21日是<text class="focus">张三</text>的生日，快来祝 贺他吧。</view>
+    </view>
+    <view class="card">
+      <view class="message-base">
+        <view class="icon">
+          <view><image src="{{imageSrc}}" class="icon-image"></image></view>
+        </view>
+        <text class="title">分享</text>
+        <view class="time">2019-01-03 19:31</view>
+      </view>
+      <view class="describe"><text class="focus">张三</text>分享了如何制作家谱。</view>
+    </view>
+    <view class="card">
+      <view class="message-base">
+        <view class="icon">
+          <view><image src="{{imageSrc}}" class="icon-image"></image></view>
+        </view>
+        <text class="title">历程</text>
+        <view class="time">2019-01-03 19:31</view>
+      </view>
+      <view class="describe"><text class="focus">张三</text>刚刚更新了历程。</view>
+    </view>
+    <view class="card">
+      <view class="message-base">
+        <view class="icon">
+          <view><image src="{{imageSrc}}" class="icon-image"></image></view>
+        </view>
+        <text class="title">家族动态</text>
+        <view class="time">2019-01-03 19:31</view>
+      </view>
+      <view class="describe">您的家族数有更新，新增：<text class="focus">张三</text></view>
+    </view>
+    <view class="card">
+      <view class="message-base">
+        <view class="icon">
+          <view><image src="{{imageSrc}}" class="icon-image"></image></view>
+        </view>
+        <text class="title">云谱头条</text>
+        <view class="time">2019-01-03 19:31</view>
+      </view>
+      <view class="describe">第一届云谱寻根活动圆满结束<text class="focus"></text></view>
+    </view>
+  </view>
+</template>
+
+<script>
+  class Index  {
+    data = {
+      imageSrc: require("../../assets/images/messageHomeEventIcon@2x.png"),
+    };
+    methods = {};
+  }
+  export default new Index();
+</script>
+<script cml-type="json">
+</script>
+<style scoped>
+.wrap {
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  background-image: url("../../assets/images/bj.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.card {
+  background-color: #fff;
+  border-radius: 0.24rem;
+  padding: 0.4rem;
+  margin: 0 0 0.4rem 0;
+  box-shadow: 0 0.08rem 0.24rem 0 rgba(0,0,0,0.1);
+}
+.message-base {
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+.icon {
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: #586ED0;
+  border-radius: 50%;
+}
+img.icon-image {
+  display: block;
+  width: 0.8rem;
+  height: 0.8rem;
+}
+.title {
+  width: 4.4rem;
+  font-size: 0.4rem;
+  color: #000;
+  margin-left: 0.3rem;
+}
+.time {
+  width: 2.8rem;
+  font-size: 0.26rem;
+  color: #666;
+}
+.describe {
+  font-size: 0.36rem;
+  color: #a1a1a1;
+  line-height: 0.48rem;
+}
+.focus {
+  font-size: 0.36rem;
+  color: #2B3BA4;
+  display: contents;
+}
+</style>
+<script cml-type="json">
+{
+}
+</script>

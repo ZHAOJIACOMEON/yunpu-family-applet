@@ -1,0 +1,193 @@
+<template>
+  <view class="wrap">
+    <input class="search-input" placeholder='输入姓名搜索' focus="{{isfocus}}" c-bind:blur="bindblurevent"></input>
+    <view class="card">
+      <view class="item">
+        <view class="item-left">
+          <text class="manager-name">张三</text>
+          <text class="manager-role">当前角色：管理员</text>
+        </view>
+        <button class="item-right" c-bind:onclick="handleEditRoleInfors">编辑角色</button>
+      </view>
+      <view class="item">
+        <view class="item-left">
+          <text class="manager-name">张三</text>
+          <text class="manager-role">当前角色：管理员</text>
+        </view>
+        <button class="item-right" c-bind:onclick="handleEditRoleInfors">编辑角色</button>
+      </view>
+    </view>
+    <custom-dialog dialogData="{{dialogData}}" c-bind:handleCloseParentDialogInfors="handleCloseParentDialogInfors"></custom-dialog>
+    <!-- <scroller
+      height="{{-1}}"
+      class="index-list-wrapper"
+      scroll-top="{{offsetTop}}"
+      c-bind:onscroll="handleScroll"
+    >
+      <view
+        c-for="{{list}}"
+        c-for-item="listitem"
+        class="index-list-item"
+      >
+        <view class="index-list-item-name" style="{{compItemNameHeight}}">
+          <text class="index-list-item-name-text">{{listitem.name}}</text>
+        </view>
+        <view 
+          c-for="{{listitem.items}}" 
+          c-for-item="subitem"
+          class="index-list-item-content"
+          style="{{compItemContentHeight}}"
+          c-bind:tap="handleSelect(subitem)"
+        >
+          <text class="index-list-item-content-text"> {{subitem.name}}</text>
+        </view>
+      </view>
+    </scroller> -->
+  </view>
+</template>
+<script>
+  const dataList = [
+    {
+      name: '阿里',
+      pinYin: 'ali',
+    },{
+      name: '北京',
+      pinYin: 'beijing',
+    },{
+      name: '成都',
+      pinYin: 'chengdu',
+    },{
+      name: '东莞',
+      pinYin: 'dongguan',
+    },{
+      name: '峨嵋',
+      pinYin: 'emei',
+    }
+ ]
+
+  class Index  {
+    data = {
+      isfocus: false,
+      dialogData: {
+        isShowModel: false
+      }
+    };
+    mounted = function(res) {
+      setTimeout(() => {
+        this.isfocus = true;
+      }, 300);
+    };
+    methods = {
+      bindblurevent() {
+        this.isfocus = false;
+      },
+      initData() {
+        // get shortcut
+        this.dataList.forEach(item => {
+          if (item.pinYin) {
+            let firstName = item.pinYin.substring(0, 1);
+            if (item.pinYin && this.shortcut.indexOf(firstName.toUpperCase()) === -1) {
+              this.shortcut.push(firstName.toUpperCase());
+            };
+          };
+        });  
+
+        // handle input data
+        const cityData = this.shortcut.map(item => ({items:[], name: item}));
+        this.dataList.forEach((item) => {
+          let firstName = item.pinYin.substring(0, 1).toUpperCase();
+          let index = this.shortcut.indexOf(firstName);
+          cityData[index].items.push(item);
+        });
+        
+        // calculate item offsetTop && totalHeight
+        cityData.forEach((item, index) => {
+          let arr = cityData.slice(0, index);
+          item.totalHeight = this.itemNameHeight + item.items.length * this.itemContentHeight;
+          item.offsetTop = arr.reduce((total, cur) => (total + this.itemNameHeight + cur.items.length * this.itemContentHeight), 0);
+        });
+        this.list = cityData;
+      },
+      handleScroll(e) {
+        let { scrollTop } = e.detail;
+        scrollTop = Math.ceil(scrollTop);
+        this.activeIndex = this.list.findIndex(item => scrollTop >= item.offsetTop && scrollTop < item.totalHeight + item.offsetTop )
+      },
+      handleSelect(e) {
+        this.$cmlEmit('onselect', e)
+      },
+      handleEditRoleInfors() {
+        this.dialogData = {
+          isShowModel: true
+        }
+      },
+      handleCloseParentDialogInfors() {
+        this.dialogData = {
+          isShowModel: false
+        }
+      }
+    };
+  }
+
+  export default new Index();
+</script>
+<style scoped>
+.wrap {
+  padding: 0.5rem 0.8rem 0 0.8rem;
+  background-image: url("../../assets/images/bj.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.search-input {
+  height: 1.12rem!important;
+  line-height: 1.12rem!important;
+  border-color: rgba(153, 153, 153, 0)!important;
+}
+.card {
+  background-color: #fff;
+  border-radius: 0.24rem;
+  padding: 0.2rem 0.6rem 0.2rem 0.6rem;
+  margin: 0.2rem 0 0.4rem 0;
+  box-shadow: 0 0.08rem 0.24rem 0 rgba(0,0,0,0.1);
+}
+.item {
+  display: flex;
+  flex-direction: row;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  justify-content: space-between;
+  border-bottom: 0.01rem solid #e2e2e2;
+}
+.item:last-child {
+  border-bottom: 0;
+}
+.item-left {
+  display: flex;
+  flex-direction: row;
+}
+.manager-name {
+  width: 1.4rem;
+  font-size: 0.32rem;
+  margin: 0 0.1rem 0 0;
+  color: #000;
+  font-weight: bold;
+}
+.manager-role {
+  font-size: 0.2rem;
+  color: #999;
+}
+.item-right {
+  font-size: 0.32rem;
+  color: #2C3F9E;
+  background-color: #fff;
+}
+</style>
+<script cml-type="json">
+{
+  "base": {
+    "usingComponents": {
+      "custom-dialog": "../../components/custom-dialog/custom-dialog"
+    }
+  }
+}
+</script>

@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "custom-dialog": "./../../components/custom-dialog/custom-dialog",
+        "cml-buildin-button": "./../../npm/chameleon-ui-builtin/components/button/button",
+        "cml-buildin-input": "./../../npm/chameleon-ui-builtin/components/input/input"
+    }
+}

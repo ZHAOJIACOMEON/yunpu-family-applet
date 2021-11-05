@@ -1,0 +1,118 @@
+@import '/static/css/index.wxss'; 
+ .wrap {
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  background-image: url(http://10.4.95.161:8000/wx/static/img/bj_bb086c5.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.card {
+  background-color: #fff;
+  border-radius: 0.24rem;
+  padding: 0.2rem 0.6rem 0.2rem 0.6rem;
+  margin: 0 0 0.4rem 0;
+  box-shadow: 0 0.08rem 0.24rem 0 rgba(0, 0, 0, 0.1);
+}
+.focus-content {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.focus-item {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.focus-total {
+  font-weight: bold;
+  font-size: 0.48rem;
+  color: #2C3F9E;
+  padding: 0.2rem 0 0 0;
+}
+.focus-title {
+  font-size: 0.32rem;
+  color: #333;
+  margin: 0.2rem auto auto auto;
+  padding: 0 0 0.3rem 0;
+}
+.message-base {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin: 0.4rem 0;
+}
+.space-between {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.left-content {
+  width: 3.9rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.right-content {
+  width: 3.9rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+}
+.icon {
+  width: 0.32rem;
+  height: 0.32rem;
+}
+img.icon-image {
+  display: block;
+  width: 0.32rem;
+  height: 0.32rem;
+}
+.title {
+  font-size: 0.38rem;
+  color: #000;
+  margin-left: 0.2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.desc {
+  font-size: 0.24rem;
+  color: #586ED0;
+}
+.desc-color-default {
+  color: #999;
+}
+.arrow {
+  width: 0.32rem;
+  height: 0.5rem;
+  background-image: url(http://10.4.95.161:8000/wx/static/img/arrow-right_0e5ab31.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 0.1rem;
+}
+.carousel {
+  overflow: hidden;
+  margin: auto auto 0.4rem auto;
+}
+.carousel-item {
+  height: 4.8rem;
+  width: 100%;
+}

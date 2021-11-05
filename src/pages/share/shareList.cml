@@ -1,0 +1,144 @@
+<template>
+  <view class="wrap">
+    <view class="card">
+      <view class="public-head">
+        <view class="avatar">
+          <image src="{{newsImage}}" class="avatar-image"></image>
+        </view>
+        <view class="avatar-info">
+          <text class="name">锺磊</text>
+          <text class="time">30分钟前</text>
+        </view>
+      </view>
+      <view class="public-detail">AntV 是蚂蚁金服全新一代数据可视化解决方案，致力于提供。</view>
+      <image src="{{newsImage}}" class="news-image"></image>
+      <view class="public-option">
+        <view class="like option">
+          <image src="{{fabulousIcon}}" class="like-icon option-icon"></image>534
+          <image src="{{commentIcon}}" class="comment-icon option-icon"></image>25
+        </view>
+        <view class="share option"><image src="{{shareIcon}}" class="share-icon option-icon"></image></view>
+      </view>
+    </view>
+    <view class="card">
+      <view class="public-head">
+        <view class="avatar">
+          <image src="{{newsImage}}" class="avatar-image"></image>
+        </view>
+        <view class="avatar-info">
+          <text class="name">锺磊</text>
+          <text class="time">30分钟前</text>
+        </view>
+      </view>
+      <view class="public-detail">AntV 是蚂蚁金服全新一代数据可视化解决方案，致力于提供。</view>
+      <image src="{{newsImage}}" class="news-image"></image>
+      <view class="public-option">
+        <view class="like option">
+          <image src="{{fabulousIcon}}" class="like-icon option-icon"></image>534
+          <image src="{{commentIcon}}" class="comment-icon option-icon"></image>25
+        </view>
+        <view class="share option"><image src="{{shareIcon}}" class="share-icon option-icon"></image></view>
+      </view>
+    </view>
+    <view class="card">
+      <view class="public-head">
+        <view class="avatar">
+          <image src="{{newsImage}}" class="avatar-image"></image>
+        </view>
+        <view class="avatar-info">
+          <text class="name">锺磊</text>
+          <text class="time">30分钟前</text>
+        </view>
+      </view>
+      <view class="public-detail">AntV 是蚂蚁金服全新一代数据可视化解决方案，致力于提供。</view>
+      <image src="{{newsImage}}" class="news-image"></image>
+      <view class="public-option">
+        <view class="like option">
+          <image src="{{fabulousIcon}}" class="like-icon option-icon"></image>534
+          <image src="{{commentIcon}}" class="comment-icon option-icon"></image>25
+        </view>
+        <view class="share option"><image src="{{shareIcon}}" class="share-icon option-icon"></image></view>
+      </view>
+    </view>
+  </view>
+</template>
+<script>
+class Index  {
+  data = {
+    iconImage: require("../../assets/images/share@2x.png"),
+    newsImage: require("../../assets/images/carousel.png"),
+    shareIcon: require("../../assets/images/shareIcon.png"),
+    commentIcon: require("../../assets/images/commentIcon.png"),
+    fabulousIcon: require("../../assets/images/fabulousIcon.png"),
+  };
+  methods = {};
+}
+export default new Index();
+</script>
+<script cml-type="json">
+</script>
+<style scoped>
+.wrap {
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  background-image: url("../../assets/images/bj.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.card {
+  background-color: #fff;
+  border-radius: 0.24rem;
+  padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+  margin: 0 0 0.4rem 0;
+  box-shadow: 0 0.08rem 0.24rem 0 rgba(0,0,0,0.1);
+}
+.public-head {
+  flex-direction: row;
+  align-items: center;
+}
+.avatar {
+  margin: 0 0.2rem 0 0;
+}
+.avatar-image {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+}
+.name {
+  font-size: 0.3rem;
+  color: #000;
+}
+.time {
+  font-size: 0.28rem;
+  color: #999;
+  margin: 0.1rem 0 0 0;
+}
+.public-detail {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.34rem;
+  line-height: 0.6rem;
+  color: #333;
+}
+.news-image {
+  height: 3.6rem;
+  margin: 0.22rem 0 0 0;
+}
+.public-option {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.3rem 0 0 0;
+  padding: 0 0 0.1rem 0;
+}
+.option {
+  flex-direction: row;
+  align-items: center;
+}
+.option-icon {
+  width: 0.6rem;
+  height: 0.6rem;
+  margin: 0 0.2rem 0 0;
+}
+.comment-icon {
+  margin-left: 0.5rem;
+}
+</style>

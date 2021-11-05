@@ -1,0 +1,66 @@
+<view class="wrap  cml-base cml-view cml-10f90a8d">
+  <view class="card focus-content  cml-base cml-view cml-10f90a8d">
+    <view class="focus-item  cml-base cml-view cml-10f90a8d">
+      <text class="focus-total  cml-base cml-text cml-10f90a8d">7697</text>
+      <text class="focus-title  cml-base cml-text cml-10f90a8d">入驻家族</text>
+    </view>
+    <view class="focus-item  cml-base cml-view cml-10f90a8d">
+      <text class="focus-total  cml-base cml-text cml-10f90a8d">12456</text>
+      <text class="focus-title  cml-base cml-text cml-10f90a8d">家族人数</text>
+    </view>
+    <view class="focus-item  cml-base cml-view cml-10f90a8d">
+      <text class="focus-total  cml-base cml-text cml-10f90a8d">254</text>
+      <text class="focus-title  cml-base cml-text cml-10f90a8d">昨日新增</text>
+    </view>
+  </view>
+  <view class="message-base space-between  cml-base cml-view cml-10f90a8d">
+    <view class="left-content  cml-base cml-view cml-10f90a8d">云谱头条</view>
+    <view class="right-content  cml-base cml-view cml-10f90a8d">
+      <text class="desc desc-color-default  cml-base cml-text cml-10f90a8d">更多</text>
+      <view class="arrow  cml-base cml-view cml-10f90a8d"></view>
+    </view>
+  </view>
+  <view class="carousel  cml-base cml-view cml-10f90a8d"><swiper class="carousel  cml-base cml-carousel cml-10f90a8d" indicator-dots="{{true}}" current="{{1}}" circular="{{true}}">
+    <swiper-item class=" cml-base cml-carousel-item cml-10f90a8d">
+      <view class="carousel-item  cml-base cml-view cml-10f90a8d"><image src="{{carouselImage}}" class="carousel-image  cml-base cml-image cml-10f90a8d"></image></view>
+    </swiper-item>
+    <swiper-item class=" cml-base cml-carousel-item cml-10f90a8d">
+      <view class="carousel-item  cml-base cml-view cml-10f90a8d"><image src="{{carouselImage}}" class="carousel-image  cml-base cml-image cml-10f90a8d"></image></view>
+    </swiper-item>
+    <swiper-item class=" cml-base cml-carousel-item cml-10f90a8d">
+      <view class="carousel-item  cml-base cml-view cml-10f90a8d"><image src="{{carouselImage}}" class="carousel-image  cml-base cml-image cml-10f90a8d"></image></view>
+    </swiper-item>
+  </swiper></view>
+  <view class="card  cml-base cml-view cml-10f90a8d">
+    <view class="message-base  cml-base cml-view cml-10f90a8d">
+      <view class="left-content  cml-base cml-view cml-10f90a8d">
+        <view class="icon  cml-base cml-view cml-10f90a8d"><image src="{{imageSrc}}" class="icon-image  cml-base cml-image cml-10f90a8d"></image></view>
+        <text class="title  cml-base cml-text cml-10f90a8d">家族列表</text>
+      </view>
+      <view class="right-content  cml-base cml-view cml-10f90a8d">
+        <text class="desc desc-color-default  cml-base cml-text cml-10f90a8d">查看加入家族</text>
+        <view class="arrow  cml-base cml-view cml-10f90a8d"></view>
+      </view>
+    </view>
+    <view class="message-base  cml-base cml-view cml-10f90a8d">
+      <view class="left-content  cml-base cml-view cml-10f90a8d">
+        <view class="icon  cml-base cml-view cml-10f90a8d"><image src="{{imageSrc}}" class="icon-image  cml-base cml-image cml-10f90a8d"></image></view>
+        <text class="title  cml-base cml-text cml-10f90a8d">皇家世系</text>
+      </view>
+      <view class="right-content  cml-base cml-view cml-10f90a8d">
+        <text class="desc  cml-base cml-text cml-10f90a8d"></text>
+        <view class="arrow  cml-base cml-view cml-10f90a8d"></view>
+      </view>
+    </view>
+    <view class="message-base  cml-base cml-view cml-10f90a8d">
+      <view class="left-content  cml-base cml-view cml-10f90a8d">
+        <view class="icon  cml-base cml-view cml-10f90a8d"><image src="{{imageSrc}}" class="icon-image  cml-base cml-image cml-10f90a8d"></image></view>
+        <text class="title  cml-base cml-text cml-10f90a8d">寻根问祖</text>
+      </view>
+      <view class="right-content  cml-base cml-view cml-10f90a8d">
+        <text class="desc  cml-base cml-text cml-10f90a8d"></text>
+        <view class="arrow  cml-base cml-view cml-10f90a8d"></view>
+      </view>
+    </view>
+  </view>
+</view>

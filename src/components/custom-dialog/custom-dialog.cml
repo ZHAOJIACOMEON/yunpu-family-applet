@@ -1,0 +1,113 @@
+<template>
+  <view class="dialog-wrap" id="dialogWrap" c-if="{{dialogData.isShowModel}}" c-bind:tap="handleCloseDialogInfors">
+    <view class="dialog-content">
+      <c-radio-group class="radio-button" option="{{ radioGroupOption }}" c-bind:groupchange="handleChangeRadioInfors"></c-radio-group>
+      <button class="button-sure" text="保存设置" c-bind:onclick="handleEditInfors"></button>
+    </view> 
+  </view>
+</template>
+
+<script>
+import cml from 'chameleon-api';
+
+class CustomDialog {
+  props = {
+    dialogData: {
+      type: Object,
+      default: {
+        isShowModel: false
+      }
+    }
+  }
+
+  data = {
+    radioGroupOption: [
+      {
+        checked: false,
+        label: "管理员",
+        color: "#586ED0"
+      },
+      {
+        checked: false,
+        label: "族员",
+        color: "#586ED0"
+      }
+    ],
+    radioSelectLabel: false
+  }
+
+  methods = {
+    handleChangeRadioInfors(e) {
+      this.radioSelectLabel = this.radioGroupOption[e.detail.index].label;
+    },
+    handleEditInfors() {},
+    handleCloseDialogInfors(e) {
+      let domId = e.target.id;
+      if(domId == "dialogWrap"){
+        this.$cmlEmit("handleCloseParentDialogInfors")
+      }
+    }
+  }
+
+  beforeCreate() {
+  }
+
+  created() {
+  }
+
+  beforeMount() {
+  }
+
+  mounted() {
+  }
+
+  beforeDestroy() {
+  }
+
+  destroyed() {
+  }
+}
+
+export default new CustomDialog();
+</script>
+<script cml-type="json">
+{
+  "base": {
+    "usingComponents": {
+      "c-radio-group": "cml-ui/components/c-radio-group/c-radio-group"
+    }
+  }
+}
+</script>
+
+<style scoped>
+.dialog-wrap {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0, .5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.dialog-content {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: #fff;
+    border-top-left-radius: 0.64rem;
+    border-top-right-radius: 0.64rem;
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+}
+.button-sure {
+  height: 1.12rem;
+  line-height: 1.12rem;
+  background-color: #586ED0;
+  font-size: 0.36rem;
+  color: #fff;
+  border-radius: 0.16rem;
+  margin: 0.2rem 0 0 0;
+}
+/deep/ .cml-radio-wrap {
+  width: 100%;
+}
+</style>

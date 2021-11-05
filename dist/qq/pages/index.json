@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "c-tabbar": "./../npm/cml-ui/components/c-tabbar/c-tabbar",
+        "messageHome": "./messageHome/index",
+        "familyHome": "./familyHome/index",
+        "findHome": "./findHome/index",
+        "userHome": "./userHome/index"
+    }
+}

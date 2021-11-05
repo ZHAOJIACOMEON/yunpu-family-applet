@@ -1,0 +1,52 @@
+<view class="wrap  cml-base cml-view cml-35d0ec9f">
+  <view class="card  cml-base cml-view cml-35d0ec9f">
+    <view class="message-base  cml-base cml-view cml-35d0ec9f">
+      <view class="icon  cml-base cml-view cml-35d0ec9f">
+        <view class=" cml-base cml-view cml-35d0ec9f"><image src="{{imageSrc}}" class="icon-image  cml-base cml-image cml-35d0ec9f"></image></view>
+      </view>
+      <text class="title  cml-base cml-text cml-35d0ec9f">大事记</text>
+      <view class="time  cml-base cml-view cml-35d0ec9f">2019-01-03 19:31</view>
+    </view>
+    <view class="describe  cml-base cml-view cml-35d0ec9f">2019年3月21日是<text class="focus  cml-base cml-text cml-35d0ec9f">张三</text>的生日，快来祝 贺他吧。</view>
+  </view>
+  <view class="card  cml-base cml-view cml-35d0ec9f">
+    <view class="message-base  cml-base cml-view cml-35d0ec9f">
+      <view class="icon  cml-base cml-view cml-35d0ec9f">
+        <view class=" cml-base cml-view cml-35d0ec9f"><image src="{{imageSrc}}" class="icon-image  cml-base cml-image cml-35d0ec9f"></image></view>
+      </view>
+      <text class="title  cml-base cml-text cml-35d0ec9f">分享</text>
+      <view class="time  cml-base cml-view cml-35d0ec9f">2019-01-03 19:31</view>
+    </view>
+    <view class="describe  cml-base cml-view cml-35d0ec9f"><text class="focus  cml-base cml-text cml-35d0ec9f">张三</text>分享了如何制作家谱。</view>
+  </view>
+  <view class="card  cml-base cml-view cml-35d0ec9f">
+    <view class="message-base  cml-base cml-view cml-35d0ec9f">
+      <view class="icon  cml-base cml-view cml-35d0ec9f">
+        <view class=" cml-base cml-view cml-35d0ec9f"><image src="{{imageSrc}}" class="icon-image  cml-base cml-image cml-35d0ec9f"></image></view>
+      </view>
+      <text class="title  cml-base cml-text cml-35d0ec9f">历程</text>
+      <view class="time  cml-base cml-view cml-35d0ec9f">2019-01-03 19:31</view>
+    </view>
+    <view class="describe  cml-base cml-view cml-35d0ec9f"><text class="focus  cml-base cml-text cml-35d0ec9f">张三</text>刚刚更新了历程。</view>
+  </view>
+  <view class="card  cml-base cml-view cml-35d0ec9f">
+    <view class="message-base  cml-base cml-view cml-35d0ec9f">
+      <view class="icon  cml-base cml-view cml-35d0ec9f">
+        <view class=" cml-base cml-view cml-35d0ec9f"><image src="{{imageSrc}}" class="icon-image  cml-base cml-image cml-35d0ec9f"></image></view>
+      </view>
+      <text class="title  cml-base cml-text cml-35d0ec9f">家族动态</text>
+      <view class="time  cml-base cml-view cml-35d0ec9f">2019-01-03 19:31</view>
+    </view>
+    <view class="describe  cml-base cml-view cml-35d0ec9f">您的家族数有更新，新增：<text class="focus  cml-base cml-text cml-35d0ec9f">张三</text></view>
+  </view>
+  <view class="card  cml-base cml-view cml-35d0ec9f">
+    <view class="message-base  cml-base cml-view cml-35d0ec9f">
+      <view class="icon  cml-base cml-view cml-35d0ec9f">
+        <view class=" cml-base cml-view cml-35d0ec9f"><image src="{{imageSrc}}" class="icon-image  cml-base cml-image cml-35d0ec9f"></image></view>
+      </view>
+      <text class="title  cml-base cml-text cml-35d0ec9f">云谱头条</text>
+      <view class="time  cml-base cml-view cml-35d0ec9f">2019-01-03 19:31</view>
+    </view>
+    <view class="describe  cml-base cml-view cml-35d0ec9f">第一届云谱寻根活动圆满结束<text class="focus  cml-base cml-text cml-35d0ec9f"></text></view>
+  </view>
+</view>

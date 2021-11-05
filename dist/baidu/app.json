@@ -1,0 +1,19 @@
+{
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationBarTitleText": "Chameleon",
+        "navigationBarTextStyle": "black"
+    },
+    "pages": [
+        "pages/index",
+        "pages/share/shareList",
+        "pages/active/activeList",
+        "pages/active/activeDetail",
+        "pages/familyBaseInfo/familyBaseInfo",
+        "pages/familyTree/familyTree",
+        "pages/manageFamily/manageFamilyList",
+        "pages/addManager/managerList"
+    ],
+    "usingComponents": {}
+}

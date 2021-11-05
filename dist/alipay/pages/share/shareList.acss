@@ -1,0 +1,81 @@
+@import '/static/css/page.acss'; 
+ .cml-3894c9fa.wrap {
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  background-image: url(http://10.4.95.161:8000/alipay/static/img/bj_bb086c5.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.cml-3894c9fa.card {
+  background-color: #fff;
+  border-radius: 0.24rem;
+  padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+  margin: 0 0 0.4rem 0;
+  box-shadow: 0 0.08rem 0.24rem 0 rgba(0, 0, 0, 0.1);
+}
+.cml-3894c9fa.public-head {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.cml-3894c9fa.avatar {
+  margin: 0 0.2rem 0 0;
+}
+.cml-3894c9fa.avatar-image {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+}
+.cml-3894c9fa.name {
+  font-size: 0.3rem;
+  color: #000;
+}
+.cml-3894c9fa.time {
+  font-size: 0.28rem;
+  color: #999;
+  margin: 0.1rem 0 0 0;
+}
+.cml-3894c9fa.public-detail {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.34rem;
+  line-height: 0.6rem;
+  color: #333;
+}
+.cml-3894c9fa.news-image {
+  height: 3.6rem;
+  margin: 0.22rem 0 0 0;
+}
+.cml-3894c9fa.public-option {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  margin: 0.3rem 0 0 0;
+  padding: 0 0 0.1rem 0;
+}
+.cml-3894c9fa.option {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.cml-3894c9fa.option-icon {
+  width: 0.6rem;
+  height: 0.6rem;
+  margin: 0 0.2rem 0 0;
+}
+.cml-3894c9fa.comment-icon {
+  margin-left: 0.5rem;
+}

@@ -1,0 +1,191 @@
+<template>
+  <view class="wrap">
+    <view class="card flex-row">
+      <view class="avatar">刘</view>
+      <view class="user-info">
+        <text>钱洋</text>
+        <view class="user-center">
+          <text class="desc desc-color-default right-space">家族得分:100</text>
+          <text class="desc desc-color-default">家族排名:1</text>
+        </view>
+      </view>
+    </view>
+    <view class="card">
+      <view class="message-base" c-bind:tap="handleToFamilyNameInfors">
+        <view class="left-content">
+          <view class="icon"><image src="{{imageSrc}}" class="icon-image"></image></view>
+          <text class="title">家族名称</text>
+        </view>
+        <view class="right-content">
+          <text class="desc desc-color-default">汶上敦睦堂刘氏</text>
+          <view class="arrow"></view>
+        </view>
+      </view>
+      <view class="message-base" c-bind:tap="handleToFamilyNameInfors">
+        <view class="left-content">
+          <view class="icon"><image src="{{imageSrc}}" class="icon-image"></image></view>
+          <text class="title">始迁组</text>
+        </view>
+        <view class="right-content">
+          <text class="desc desc-color-default">刘荣</text>
+          <view class="arrow"></view>
+        </view>
+      </view>
+      <view class="message-base" c-bind:tap="handleToManagerListInfors">
+        <view class="left-content">
+          <view class="icon"><image src="{{imageSrc}}" class="icon-image"></image></view>
+          <text class="title">添加管理员</text>
+        </view>
+        <view class="right-content">
+          <text class="desc"></text>
+          <view class="arrow"></view>
+        </view>
+      </view>
+      <view class="message-base">
+        <view class="left-content">
+          <view class="icon"><image src="{{imageSrc}}" class="icon-image"></image></view>
+          <text class="title">家谱管理</text>
+        </view>
+        <view class="right-content">
+          <text class="desc"></text>
+          <view class="arrow"></view>
+        </view>
+      </view>
+      <view class="message-base">
+        <view class="left-content">
+          <view class="icon"><image src="{{imageSrc}}" class="icon-image"></image></view>
+          <text class="title">辈分设置</text>
+        </view>
+        <view class="right-content">
+          <text class="desc"></text>
+          <view class="arrow"></view>
+        </view>
+      </view>
+      <view class="message-base">
+        <view class="left-content">
+          <view class="icon"><image src="{{imageSrc}}" class="icon-image"></image></view>
+          <text class="title">家族群设置</text>
+        </view>
+        <view class="right-content">
+          <text class="desc"></text>
+          <view class="arrow"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
+<script>
+import cml from 'chameleon-api';
+
+class Index  {
+  data = {
+    imageSrc: require("../../assets/images/share@2x.png")
+  };
+  methods = {
+    handleToFamilyNameInfors() {
+      cml.redirectTo({
+        "path": "/pages/familyBaseInfo/familyBaseInfo"
+      });
+    },
+    handleToManagerListInfors() {
+      cml.redirectTo({
+        "path": "/pages/addManager/managerList"
+      });
+    }
+  };
+}
+export default new Index();
+</script>
+<script cml-type="json">
+</script>
+<style scoped>
+.wrap {
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  background-image: url("../../assets/images/bj.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.card {
+  background-color: #fff;
+  border-radius: 0.24rem;
+  padding: 0.2rem 0.6rem 0.2rem 0.6rem;
+  margin: 0 0 0.4rem 0;
+  box-shadow: 0 0.08rem 0.24rem 0 rgba(0,0,0,0.1);
+}
+.flex-row {
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+}
+.avatar {
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  font-size: 0.48rem;
+  color: #fff;
+  background-color: #586ED0;
+  text-align: center;
+  line-height: 1.4rem;
+  margin: 0 0.5rem 0 0;
+}
+.user-info {
+  width: 5rem;
+}
+.user-center {
+  flex-direction: row;
+  justify-content: left;
+  margin-top: 0.1rem;
+  align-items: center;
+}
+.message-base {
+  flex-direction: row;
+  align-items: center;
+  margin: 0.4rem 0;
+}
+.left-content {
+  width: 3.9rem;
+  flex-direction: row;
+  align-items: center;
+}
+.right-content {
+  width: 3.9rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.icon {
+  width: 0.32rem;
+  height: 0.32rem;
+}
+img.icon-image {
+  display: block;
+  width: 0.32rem;
+  height: 0.32rem;
+}
+.title {
+  font-size: 0.38rem;
+  color: #000;
+  margin-left: 0.2rem;
+  display: flex;
+}
+.desc {
+  font-size: 0.24rem;
+  color: #586ED0;
+}
+.desc-color-default {
+  color: #999;
+}
+.right-space {
+  margin: 0 0.5rem 0 0;
+}
+.arrow {
+  width: 0.32rem;
+  height: 0.5rem;
+  background-image: url("../../assets/images/arrow-right.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 0.1rem;
+}
+</style>

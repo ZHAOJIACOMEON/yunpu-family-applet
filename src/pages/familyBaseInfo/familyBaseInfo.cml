@@ -1,0 +1,107 @@
+<template>
+  <view class="wrap">
+    <view class="card">
+      <view class="detail-content">
+        <text class="title">家族ID</text>
+        <text class="desc">17977008</text>
+      </view>
+      <view class="detail-content">
+        <text class="title">家族名称</text>
+        <text class="desc">汶上刘氏</text>
+      </view>
+      <view class="detail-content">
+        <text class="title">堂号</text>
+        <text class="desc">敦睦堂</text>
+      </view>
+      <view class="detail-content">
+        <text class="title">姓氏</text>
+        <text class="desc">刘</text>
+      </view>
+      <view class="detail-content">
+        <text class="title">始祖</text>
+        <text class="desc">刘</text>
+      </view>
+      <view class="detail-content">
+        <text class="title">地址</text>
+        <text class="desc">北京市海淀区</text>
+      </view>
+      <view class="detail-content">
+        <text class="title">简介</text>
+        <text class="desc">温馨的气氛和欢快的节奏</text>
+      </view>
+    </view>
+    <view class="card">
+      <view class="detail-content">
+        <text class="title">介绍人</text>
+        <text class="desc">于强</text>
+      </view>
+      <view class="detail-content">
+        <text class="title">资助人</text>
+        <text class="desc">刘氏</text>
+      </view>
+      <view class="detail-content">
+        <text class="title">状态</text>
+        <text class="desc">待激活</text>
+      </view>
+    </view>
+  </view>
+</template>
+<script>
+import cml from 'chameleon-api';
+
+  class Index  {
+    data = {
+      imageSrc: require("../../assets/images/share@2x.png"),
+    };
+    methods = {
+      handleToFamilyShareListInfors() {
+        cml.redirectTo({
+          "path": "/pages/share/shareList"
+        });
+      },
+      handleToFamilyActiveListInfors() {
+        cml.redirectTo({
+          "path": "/pages/active/activeList"
+        });
+      },
+      handleToFamilyBaseInfoInfors() {
+        cml.redirectTo({
+          "path": "/pages/familyBaseInfo/familyBaseInfo"
+        });
+      }
+    };
+  }
+  export default new Index();
+</script>
+<script cml-type="json">
+</script>
+<style scoped>
+.wrap {
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  background-image: url("../../assets/images/bj.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.card {
+  background-color: #fff;
+  border-radius: 0.24rem;
+  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+  margin: 0 0 0.4rem 0;
+  box-shadow: 0 0.08rem 0.24rem 0 rgba(0,0,0,0.1);
+}
+.detail-content {
+  flex-direction: row;
+  justify-content: space-between;
+  height: 1.3rem;
+  line-height: 1.3rem;
+}
+.title {
+  font-size: 0.38rem;
+  color: #333;
+}
+.desc {
+  font-size: 0.38rem;
+  color: #2C3F9E;
+  font-weight: bold;
+}
+</style>

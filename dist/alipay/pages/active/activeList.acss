@@ -1,0 +1,45 @@
+@import '/static/css/page.acss'; 
+ .cml-035e5f03.wrap {
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  background-image: url(http://10.4.95.161:8000/alipay/static/img/bj_bb086c5.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.cml-035e5f03.card {
+  background-color: #fff;
+  border-radius: 0.24rem;
+  padding: 0.8rem 0.4rem 0.1rem 0.4rem;
+  margin: 0 0 0.4rem 0;
+  box-shadow: 0 0.08rem 0.24rem 0 rgba(0, 0, 0, 0.1);
+}
+.cml-035e5f03.active-title {
+  font-size: 0.4rem;
+  font-weight: bold;
+  color: #000;
+  margin: 0 0 0.4rem 0;
+}
+.cml-035e5f03.active-detail {
+  font-size: 0.32rem;
+  color: #616161;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin: 0 0 0.3rem 0;
+}
+.cml-035e5f03.active-icon {
+  width: 0.36rem;
+  height: 0.36rem;
+  margin: 0 0.2rem 0 0;
+}
+.cml-035e5f03.active-more {
+  height: 1.4rem;
+  line-height: 1.4rem;
+  font-size: 0.36rem;
+  color: #586ED0;
+  border-top: 0.02rem solid #eee;
+  text-align: center;
+}

@@ -1,0 +1,6 @@
+<view class="dialog-wrap  cml-base cml-view cml-26e24a32" id="dialogWrap" a:if="{{dialogData.isShowModel}}" onTap="_cmlEventProxy" data-eventtap="{{['handleCloseDialogInfors']}}">
+  <view class="dialog-content  cml-base cml-view cml-26e24a32">
+    <view class="radio-button  cml-base cml-view cml-26e24a32"><c-radio-group class="radio-button  cml-base cml-c-radio-group cml-26e24a32" option="{{ radioGroupOption }}" onGroupchange="_cmlEventProxy" data-eventgroupchange="{{['handleChangeRadioInfors']}}"></c-radio-group></view>
+    <view class="button-sure  cml-base cml-view cml-26e24a32"><cml-buildin-button class="button-sure  cml-base cml-button cml-26e24a32" text="保存设置" onOnclick="_cmlEventProxy" data-eventonclick="{{['handleEditInfors']}}"></cml-buildin-button></view>
+  </view> 
+</view>

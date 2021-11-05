@@ -1,0 +1,21 @@
+<view class="wrap  cml-base cml-view cml-34beb7fa">
+  <view class="search-input  cml-base cml-view cml-34beb7fa"><cml-buildin-input class="search-input  cml-base cml-input cml-34beb7fa" placeholder="输入姓名搜索" focus="{{isfocus}}" onBlur="_cmlEventProxy" data-eventblur="{{['bindblurevent']}}"></cml-buildin-input></view>
+  <view class="card  cml-base cml-view cml-34beb7fa">
+    <view class="item  cml-base cml-view cml-34beb7fa">
+      <view class="item-left  cml-base cml-view cml-34beb7fa">
+        <text class="manager-name  cml-base cml-text cml-34beb7fa">张三</text>
+        <text class="manager-role  cml-base cml-text cml-34beb7fa">当前角色：管理员</text>
+      </view>
+      <view class="item-right  cml-base cml-view cml-34beb7fa"><cml-buildin-button class="item-right  cml-base cml-button cml-34beb7fa" onOnclick="_cmlEventProxy" data-eventonclick="{{['handleEditRoleInfors']}}">编辑角色</cml-buildin-button></view>
+    </view>
+    <view class="item  cml-base cml-view cml-34beb7fa">
+      <view class="item-left  cml-base cml-view cml-34beb7fa">
+        <text class="manager-name  cml-base cml-text cml-34beb7fa">张三</text>
+        <text class="manager-role  cml-base cml-text cml-34beb7fa">当前角色：管理员</text>
+      </view>
+      <view class="item-right  cml-base cml-view cml-34beb7fa"><cml-buildin-button class="item-right  cml-base cml-button cml-34beb7fa" onOnclick="_cmlEventProxy" data-eventonclick="{{['handleEditRoleInfors']}}">编辑角色</cml-buildin-button></view>
+    </view>
+  </view>
+  <view class=" cml-base cml-view cml-34beb7fa"><custom-dialog dialogData="{{dialogData}}" onHandleCloseParentDialogInfors="_cmlEventProxy" data-eventhandlecloseparentdialoginfors="{{['handleCloseParentDialogInfors']}}" class=" cml-base cml-custom-dialog cml-34beb7fa"></custom-dialog></view>
+  
+</view>

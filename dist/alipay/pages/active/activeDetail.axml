@@ -1,0 +1,30 @@
+<view class="wrap  cml-base cml-view cml-dc7f9614">
+  <view class="focus  cml-base cml-view cml-dc7f9614">
+    <image src="{{focusImage}}" class="focus-image  cml-base cml-image cml-dc7f9614"></image>
+  </view>
+  <view class="card active-content  cml-base cml-view cml-dc7f9614">
+    <view class="active-title  cml-base cml-view cml-dc7f9614">汶上敦睦堂刘氏祭祖仪式</view>
+    <view class="active-detail  cml-base cml-view cml-dc7f9614"><image src="{{dateIconImage}}" class="active-icon  cml-base cml-image cml-dc7f9614"></image>2019年2月03日 12:00</view>
+    <view class="active-detail  cml-base cml-view cml-dc7f9614"><image src="{{finishIconImage}}" class="active-icon  cml-base cml-image cml-dc7f9614"></image>未完成</view>
+    <view class="active-detail  cml-base cml-view cml-dc7f9614"><image src="{{addressIconImage}}" class="active-icon  cml-base cml-image cml-dc7f9614"></image>河南省南阳市邓州区中州路442号</view>
+  </view>
+  <view class="card  cml-base cml-view cml-dc7f9614">
+    <text class="join-total  cml-base cml-text cml-dc7f9614">已报名：50人限额300人</text>
+    <view class="join-content  cml-base cml-view cml-dc7f9614">
+      <view class="join-list  cml-base cml-view cml-dc7f9614">
+        <image src="{{focusImage}}" class="join-item  cml-base cml-image cml-dc7f9614"></image>
+        <image src="{{focusImage}}" class="join-item  cml-base cml-image cml-dc7f9614"></image>
+        <image src="{{focusImage}}" class="join-item  cml-base cml-image cml-dc7f9614"></image>
+        <image src="{{focusImage}}" class="join-item  cml-base cml-image cml-dc7f9614"></image>
+        <image src="{{focusImage}}" class="join-item  cml-base cml-image cml-dc7f9614"></image>
+        <image src="{{focusImage}}" class="join-item  cml-base cml-image cml-dc7f9614"></image>
+      </view>
+      <text class="join-more  cml-base cml-text cml-dc7f9614">更多</text>
+    </view>
+  </view>
+  <view class="card  cml-base cml-view cml-dc7f9614">
+    <text class="detail-title  cml-base cml-text cml-dc7f9614">活动详情</text>
+    <text class="detail-desc  cml-base cml-text cml-dc7f9614">SEE = Seeking Experience & Engineering，意为探索用户体验与工程实践，由蚂蚁金服集团每年举办 1-2 次，包括专业分享、产品展台、Workshop 等内容。</text>
+  </view>
+  <view class="join-button  cml-base cml-view cml-dc7f9614"><cml-buildin-button class="join-button  cml-base cml-button cml-dc7f9614" text="立即报名活动" onOnclick="_cmlEventProxy" data-eventonclick="{{['handleJoinActiveInfors']}}" text-style="font-size: 0.4rem;"></cml-buildin-button></view>
+</view>

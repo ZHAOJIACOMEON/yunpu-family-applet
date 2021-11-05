@@ -1,0 +1,96 @@
+<view class="wrap  cml-base cml-view cml-33fcc178">
+  <view class="card  cml-base cml-view cml-33fcc178">
+    <view class="message-base  cml-base cml-view cml-33fcc178" onTap="_cmlEventProxy" data-eventtap="{{['handleToFamilyShareListInfors']}}">
+      <view class="left-content  cml-base cml-view cml-33fcc178">
+        <view class="icon  cml-base cml-view cml-33fcc178"><image src="{{imageSrc}}" class="icon-image  cml-base cml-image cml-33fcc178"></image></view>
+        <text class="title  cml-base cml-text cml-33fcc178">家族分享</text>
+      </view>
+      <view class="right-content  cml-base cml-view cml-33fcc178">
+        <text class="desc  cml-base cml-text cml-33fcc178">有新的分享</text>
+        <view class="arrow  cml-base cml-view cml-33fcc178"></view>
+      </view>
+    </view>
+    <view class="message-base  cml-base cml-view cml-33fcc178" onTap="_cmlEventProxy" data-eventtap="{{['handleToFamilyActiveListInfors']}}">
+      <view class="left-content  cml-base cml-view cml-33fcc178">
+        <view class="icon  cml-base cml-view cml-33fcc178"><image src="{{imageSrc}}" class="icon-image  cml-base cml-image cml-33fcc178"></image></view>
+        <text class="title  cml-base cml-text cml-33fcc178">家族活动</text>
+      </view>
+      <view class="right-content  cml-base cml-view cml-33fcc178">
+        <text class="desc  cml-base cml-text cml-33fcc178">有新的活动</text>
+        <view class="arrow  cml-base cml-view cml-33fcc178"></view>
+      </view>
+    </view>
+  </view>
+  <view class="card  cml-base cml-view cml-33fcc178">
+    <view class="message-base  cml-base cml-view cml-33fcc178" onTap="_cmlEventProxy" data-eventtap="{{['handleToFamilyBaseInfoInfors']}}">
+      <view class="left-content  cml-base cml-view cml-33fcc178">
+        <view class="icon  cml-base cml-view cml-33fcc178"><image src="{{imageSrc}}" class="icon-image  cml-base cml-image cml-33fcc178"></image></view>
+        <text class="title  cml-base cml-text cml-33fcc178">家族基本信息</text>
+      </view>
+      <view class="right-content  cml-base cml-view cml-33fcc178">
+        <text class="desc  cml-base cml-text cml-33fcc178"></text>
+        <view class="arrow  cml-base cml-view cml-33fcc178"></view>
+      </view>
+    </view>
+    <view class="message-base  cml-base cml-view cml-33fcc178" onTap="_cmlEventProxy" data-eventtap="{{['handleToFamilyTreeInfoInfors']}}">
+      <view class="left-content  cml-base cml-view cml-33fcc178">
+        <view class="icon  cml-base cml-view cml-33fcc178"><image src="{{imageSrc}}" class="icon-image  cml-base cml-image cml-33fcc178"></image></view>
+        <text class="title  cml-base cml-text cml-33fcc178">家族树</text>
+      </view>
+      <view class="right-content  cml-base cml-view cml-33fcc178">
+        <text class="desc  cml-base cml-text cml-33fcc178"></text>
+        <view class="arrow  cml-base cml-view cml-33fcc178"></view>
+      </view>
+    </view>
+    <view class="message-base  cml-base cml-view cml-33fcc178" onTap="_cmlEventProxy" data-eventtap="{{['handleToManageFamilyListInfors']}}">
+      <view class="left-content  cml-base cml-view cml-33fcc178">
+        <view class="icon  cml-base cml-view cml-33fcc178"><image src="{{imageSrc}}" class="icon-image  cml-base cml-image cml-33fcc178"></image></view>
+        <text class="title  cml-base cml-text cml-33fcc178">管理家族</text>
+      </view>
+      <view class="right-content  cml-base cml-view cml-33fcc178">
+        <text class="desc  cml-base cml-text cml-33fcc178"></text>
+        <view class="arrow  cml-base cml-view cml-33fcc178"></view>
+      </view>
+    </view>
+    <view class="message-base  cml-base cml-view cml-33fcc178">
+      <view class="left-content  cml-base cml-view cml-33fcc178">
+        <view class="icon  cml-base cml-view cml-33fcc178"><image src="{{imageSrc}}" class="icon-image  cml-base cml-image cml-33fcc178"></image></view>
+        <text class="title  cml-base cml-text cml-33fcc178">家族资料</text>
+      </view>
+      <view class="right-content  cml-base cml-view cml-33fcc178">
+        <text class="desc  cml-base cml-text cml-33fcc178"></text>
+        <view class="arrow  cml-base cml-view cml-33fcc178"></view>
+      </view>
+    </view>
+    <view class="message-base  cml-base cml-view cml-33fcc178">
+      <view class="left-content  cml-base cml-view cml-33fcc178">
+        <view class="icon  cml-base cml-view cml-33fcc178"><image src="{{imageSrc}}" class="icon-image  cml-base cml-image cml-33fcc178"></image></view>
+        <text class="title  cml-base cml-text cml-33fcc178">电子家谱</text>
+      </view>
+      <view class="right-content  cml-base cml-view cml-33fcc178">
+        <text class="desc  cml-base cml-text cml-33fcc178"></text>
+        <view class="arrow  cml-base cml-view cml-33fcc178"></view>
+      </view>
+    </view>
+    <view class="message-base  cml-base cml-view cml-33fcc178">
+      <view class="left-content  cml-base cml-view cml-33fcc178">
+        <view class="icon  cml-base cml-view cml-33fcc178"><image src="{{imageSrc}}" class="icon-image  cml-base cml-image cml-33fcc178"></image></view>
+        <text class="title  cml-base cml-text cml-33fcc178">家族数据</text>
+      </view>
+      <view class="right-content  cml-base cml-view cml-33fcc178">
+        <text class="desc  cml-base cml-text cml-33fcc178"></text>
+        <view class="arrow  cml-base cml-view cml-33fcc178"></view>
+      </view>
+    </view>
+    <view class="message-base  cml-base cml-view cml-33fcc178">
+      <view class="left-content  cml-base cml-view cml-33fcc178">
+        <view class="icon  cml-base cml-view cml-33fcc178"><image src="{{imageSrc}}" class="icon-image  cml-base cml-image cml-33fcc178"></image></view>
+        <text class="title  cml-base cml-text cml-33fcc178">云谱贡献榜</text>
+      </view>
+      <view class="right-content  cml-base cml-view cml-33fcc178">
+        <text class="desc  cml-base cml-text cml-33fcc178"></text>
+        <view class="arrow  cml-base cml-view cml-33fcc178"></view>
+      </view>
+    </view>
+  </view>
+</view>

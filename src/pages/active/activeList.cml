@@ -1,0 +1,87 @@
+<template>
+  <view class="wrap">
+    <view class="card">
+      <view class="active-title">汶上敦睦堂刘氏祭祖仪式</view>
+      <view class="active-detail"><image src="{{dateIconImage}}" class="active-icon"></image>2019年2月03日 12:00</view>
+      <view class="active-detail"><image src="{{finishIconImage}}" class="active-icon"></image>未完成</view>
+      <view class="active-detail"><image src="{{addressIconImage}}" class="active-icon"></image>河南省南阳市邓州区中州路442号</view>
+      <text class="active-more" c-bind:tap="handleToActivedetailInfors">查看活动详情</text>
+    </view>
+    <view class="card">
+      <view class="active-title">汶上敦睦堂刘氏祭祖仪式</view>
+      <view class="active-detail"><image src="{{dateIconImage}}" class="active-icon"></image>2019年2月03日 12:00</view>
+      <view class="active-detail"><image src="{{finishIconImage}}" class="active-icon"></image>未完成</view>
+      <view class="active-detail"><image src="{{addressIconImage}}" class="active-icon"></image>河南省南阳市邓州区中州路442号</view>
+      <text class="active-more" c-bind:tap="handleToActivedetailInfors">查看活动详情</text>
+    </view>
+    <view class="card">
+      <view class="active-title">汶上敦睦堂刘氏祭祖仪式</view>
+      <view class="active-detail"><image src="{{dateIconImage}}" class="active-icon"></image>2019年2月03日 12:00</view>
+      <view class="active-detail"><image src="{{finishIconImage}}" class="active-icon"></image>未完成</view>
+      <view class="active-detail"><image src="{{addressIconImage}}" class="active-icon"></image>河南省南阳市邓州区中州路442号</view>
+      <text class="active-more">查看活动详情</text>
+    </view>
+  </view>
+</template>
+<script>
+import cml from 'chameleon-api';
+
+class Index  {
+  data = {
+    dateIconImage: require("../../assets/images/dateIcon.png"),
+    finishIconImage: require("../../assets/images/yibiaopanIcon.png"),
+    addressIconImage: require("../../assets/images/addressIcon.png")
+  };
+  methods = {
+    handleToActivedetailInfors() {
+      cml.redirectTo({
+        "path": "/pages/active/activeDetail"
+      });
+    }
+  };
+}
+export default new Index();
+</script>
+<script cml-type="json">
+</script>
+<style scoped>
+.wrap {
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  background-image: url("../../assets/images/bj.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.card {
+  background-color: #fff;
+  border-radius: 0.24rem;
+  padding: 0.8rem 0.4rem 0.1rem 0.4rem;
+  margin: 0 0 0.4rem 0;
+  box-shadow: 0 0.08rem 0.24rem 0 rgba(0,0,0,0.1);
+}
+.active-title {
+  font-size: 0.4rem;
+  font-weight: bold;
+  color: #000;
+  margin: 0 0 0.4rem 0;
+}
+.active-detail {
+  font-size: 0.32rem;
+  color: #616161;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0 0.3rem 0;
+}
+.active-icon {
+  width: 0.36rem;
+  height: 0.36rem;
+  margin: 0 0.2rem 0 0;
+}
+.active-more {
+  height: 1.4rem;
+  line-height: 1.4rem;
+  font-size: 0.36rem;
+  color: #586ED0;
+  border-top: 0.02rem solid #eee;
+  text-align: center;
+}
+</style>

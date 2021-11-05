@@ -1,0 +1,146 @@
+<template>
+  <view class="wrap">
+    <view class="focus">
+      <image src="{{focusImage}}" class="focus-image"></image>
+    </view>
+    <view class="card active-content">
+      <view class="active-title">汶上敦睦堂刘氏祭祖仪式</view>
+      <view class="active-detail"><image src="{{dateIconImage}}" class="active-icon"></image>2019年2月03日 12:00</view>
+      <view class="active-detail"><image src="{{finishIconImage}}" class="active-icon"></image>未完成</view>
+      <view class="active-detail"><image src="{{addressIconImage}}" class="active-icon"></image>河南省南阳市邓州区中州路442号</view>
+    </view>
+    <view class="card">
+      <text class="join-total">已报名：50人限额300人</text>
+      <view class="join-content">
+        <view class="join-list">
+          <image src="{{focusImage}}" class="join-item"></image>
+          <image src="{{focusImage}}" class="join-item"></image>
+          <image src="{{focusImage}}" class="join-item"></image>
+          <image src="{{focusImage}}" class="join-item"></image>
+          <image src="{{focusImage}}" class="join-item"></image>
+          <image src="{{focusImage}}" class="join-item"></image>
+        </view>
+        <text class="join-more">更多</text>
+      </view>
+    </view>
+    <view class="card">
+      <text class="detail-title">活动详情</text>
+      <text class="detail-desc">SEE = Seeking Experience & Engineering，意为探索用户体验与工程实践，由蚂蚁金服集团每年举办 1-2 次，包括专业分享、产品展台、Workshop 等内容。</text>
+    </view>
+    <button class="join-button" text="立即报名活动" c-bind:onclick="handleJoinActiveInfors" text-style="font-size: 0.4rem;"></button>
+  </view>
+</template>
+<script>
+class Index  {
+  data = {
+    dateIconImage: require("../../assets/images/dateIcon.png"),
+    finishIconImage: require("../../assets/images/yibiaopanIcon.png"),
+    addressIconImage: require("../../assets/images/addressIcon.png"),
+    focusImage: require("../../assets/images/carousel.png")
+  };
+  methods = {
+    handleJoinActiveInfors() {
+
+    }
+  }
+}
+export default new Index();
+</script>
+<script cml-type="json">
+</script>
+<style scoped>
+.wrap {
+  padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+  background-image: url("../../assets/images/bj.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.card {
+  background-color: #fff;
+  border-radius: 0.24rem;
+  padding: 0.8rem 0.4rem 0.1rem 0.4rem;
+  margin: 0 0 0.4rem 0;
+  box-shadow: 0 0.08rem 0.24rem 0 rgba(0,0,0,0.1);
+}
+.focus {
+  margin: 0 0 0.4rem 0;
+}
+.focus-image {
+  height: 4.8rem;
+}
+.active-content {
+  padding-bottom: 0.4rem;
+}
+.active-title {
+  font-size: 0.4rem;
+  font-weight: bold;
+  color: #000;
+  margin: 0 0 0.4rem 0;
+}
+.active-detail {
+  font-size: 0.32rem;
+  color: #616161;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0 0.3rem 0;
+}
+.active-icon {
+  width: 0.36rem;
+  height: 0.36rem;
+  margin: 0 0.2rem 0 0;
+}
+.active-more {
+  height: 1.4rem;
+  line-height: 1.4rem;
+  font-size: 0.36rem;
+  color: #586ED0;
+  border-top: 0.02rem solid #eee;
+  text-align: center;
+}
+.join-total {
+  font-size: 0.32rem;
+  color: #000;
+}
+.join-content {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.3rem 0 0 0;
+  padding: 0 0 0.5rem 0;
+}
+.join-list {
+  flex-direction: row;
+}
+.join-item {
+  width: 0.9rem;
+  height: 0.9rem;
+  margin: 0 0.3rem 0 0;
+  border-radius: 50%;
+}
+.join-more {
+  width: 0.9rem;
+  height: 0.9rem;
+  line-height: 0.9rem;
+  background-color: #2C3F9E;
+  font-size: 0.22rem;
+  text-align: center;
+  color: #FFF;
+  border-radius: 50%;
+}
+.detail-title {
+  font-size: 0.36rem;
+  color: #000
+}
+.detail-desc {
+  font-size: 0.32rem;
+  color: #999;
+  line-height: 0.6rem;
+  padding: 0.3rem 0 0.5rem 0;
+}
+.join-button {
+  width: 9rem;
+  position: fixed;
+  bottom: 0.5rem;
+  background-color: #586ED0;
+}
+</style>

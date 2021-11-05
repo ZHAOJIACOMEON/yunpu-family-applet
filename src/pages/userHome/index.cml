@@ -1,0 +1,201 @@
+<template>
+  <view class="wrap">
+    <view class="card flex-row">
+      <view class="avatar">
+        <image src="{{avatarImage}}" class="avatar-image"></image>
+      </view>
+      <view class="user-info">
+        <text>钱洋</text>
+        <view class="user-center">
+          <text class="desc desc-color-default">个人中心</text>
+          <view class="arrow"></view>
+        </view>
+      </view>
+      <view class="user-code"><image src="{{avatarImage}}" class="code-image"></image></view>
+    </view>
+    <view class="card">
+      <view class="integral">
+        <text class="integral-title">我的积分</text>
+        <text class="integral-total">12345</text>
+      </view>
+      <view class="message-base">
+        <view class="left-content">
+          <view class="icon"><image src="{{imageSrc}}" class="icon-image"></image></view>
+          <text class="title">资助云谱</text>
+        </view>
+        <view class="right-content">
+          <text class="desc desc-color-default">1000</text>
+          <view class="arrow"></view>
+        </view>
+      </view>
+      <view class="message-base">
+        <view class="left-content">
+          <view class="icon"><image src="{{imageSrc}}" class="icon-image"></image></view>
+          <text class="title">我的收藏</text>
+        </view>
+        <view class="right-content">
+          <text class="desc desc-color-default">2</text>
+          <view class="arrow"></view>
+        </view>
+      </view>
+      <view class="message-base">
+        <view class="left-content">
+          <view class="icon"><image src="{{imageSrc}}" class="icon-image"></image></view>
+          <text class="title">问题反馈</text>
+        </view>
+        <view class="right-content">
+          <text class="desc"></text>
+          <view class="arrow"></view>
+        </view>
+      </view>
+      <view class="message-base">
+        <view class="left-content">
+          <view class="icon"><image src="{{imageSrc}}" class="icon-image"></image></view>
+          <text class="title">邀请亲人</text>
+        </view>
+        <view class="right-content">
+          <text class="desc"></text>
+          <view class="arrow"></view>
+        </view>
+      </view>
+      <view class="message-base">
+        <view class="left-content">
+          <view class="icon"><image src="{{imageSrc}}" class="icon-image"></image></view>
+          <text class="title">云谱设置</text>
+        </view>
+        <view class="right-content">
+          <text class="desc"></text>
+          <view class="arrow"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
+
+<script>
+class Index {
+  data = {
+    imageSrc: require("../../assets/images/share@2x.png"),
+    avatarImage: require("../../assets/images/carousel.png"),
+  }
+}
+
+export default new Index();
+</script>
+<script cml-type="json">
+</script>
+<style scoped>
+.wrap {
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  background-image: url("../../assets/images/bj.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.card {
+  background-color: #fff;
+  border-radius: 0.24rem;
+  padding: 0.2rem 0.6rem 0.2rem 0.6rem;
+  margin: 0 0 0.4rem 0;
+  box-shadow: 0 0.08rem 0.24rem 0 rgba(0,0,0,0.1);
+}
+.avatar {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.avatar-image {
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+}
+.user-info {
+  width: 5rem;
+}
+.user-center {
+  flex-direction: row;
+  justify-content: left;
+  margin-top: 0.1rem;
+  align-items: center;
+}
+.user-code {
+
+}
+.code-image {
+  width: 0.64rem;
+  height: 0.64rem;
+}
+.flex-row {
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+}
+.message-base {
+  flex-direction: row;
+  align-items: center;
+  margin: 0.4rem 0;
+}
+.space-between {
+  justify-content: space-between;
+}
+.left-content {
+  width: 3.9rem;
+  flex-direction: row;
+  align-items: center;
+}
+.right-content {
+  width: 3.9rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.icon {
+  width: 0.32rem;
+  height: 0.32rem;
+}
+img.icon-image {
+  display: block;
+  width: 0.32rem;
+  height: 0.32rem;
+}
+.title {
+  font-size: 0.38rem;
+  color: #000;
+  margin-left: 0.2rem;
+  display: flex;
+}
+.desc {
+  font-size: 0.24rem;
+  color: #586ED0;
+}
+.desc-color-default {
+  color: #999;
+}
+.arrow {
+  width: 0.32rem;
+  height: 0.5rem;
+  background-image: url("../../assets/images/arrow-right.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 0.1rem;
+}
+.integral {
+  padding: 0.3rem 0 0.2rem 0;
+}
+.integral-title {
+  font-size: 0.36rem;
+  color: #ababab;
+  text-align: center;
+}
+.integral-total {
+  font-size: 0.48rem;
+  font-weight: bold;
+  color: #2C3F9E;
+  text-align: center;
+  margin: 0.2rem 0 0 0;
+}
+</style>
+<script cml-type="json">
+{
+}
+</script>

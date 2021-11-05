@@ -1,0 +1,5 @@
+@import '/static/css/page.acss'; 
+ .cml-24c3dce8.tab-wrap {
+  background-color: #fff;
+  border-top: 0.01rem solid #eee;
+}
